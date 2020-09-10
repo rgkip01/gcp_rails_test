@@ -1,7 +1,7 @@
 service: gcloud-rails-test
 runtime: ruby
 env: flex
-entrypoint: bundle exec ruby app.rb
+entrypoint: bundle exec rackup --port $PORT
 
 # [START gae_flex_postgres_env]
 env_variables:
