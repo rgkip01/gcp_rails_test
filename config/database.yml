@@ -1,7 +1,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  host: db
+  host: "34.95.239.203"
   username: postgres
   password: password
   pool: 5
@@ -9,3 +9,7 @@ default: &default
 development:
   <<: *default
   database: gcp_rails_test_development
+
+production:
+  <<: *default
+  database: gcloud-rails-test-production
