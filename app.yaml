@@ -1,5 +1,5 @@
 service: gcloud-rails-test
-runtime: ruby
+runtime: custom
 env: flex
 entrypoint: bundle exec rackup --port $PORT
 
