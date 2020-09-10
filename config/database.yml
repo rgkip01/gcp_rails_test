@@ -3,12 +3,12 @@ default: &default
   encoding: unicode
   host: "34.95.239.203"
   username: postgres
-  password: password
+  password: gcloud-rails-test-production
   pool: 5
 
 development:
   <<: *default
-  database: gcp_rails_test_development
+  database: gcloud-rails-test-production
 
 production:
   <<: *default

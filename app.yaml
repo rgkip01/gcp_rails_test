@@ -6,7 +6,7 @@ entrypoint: bundle exec ruby app.rb
 # [START gae_flex_postgres_env]
 env_variables:
   POSTGRES_USER: postgres
-  POSTGRES_PASSWORD: password
+  POSTGRES_PASSWORD: gcloud-rails-test-production
   POSTGRES_DATABASE: gcloud-rails-test-production
   POSTGRES_SOCKET_PATH: /cloudsql/gcloud-rails-test:southamerica-east1:gcloud-rails-test-production
 # [END gae_flex_postgres_env]
