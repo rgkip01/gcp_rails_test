@@ -1,7 +1,7 @@
 service: gcloud-rails-test
-runtime: custom
-env: flex
 entrypoint: bundle exec rackup --port $PORT
+env: flex
+runtime: custom
 
 # [START gae_flex_postgres_env]
 env_variables:
@@ -10,9 +10,7 @@ env_variables:
   POSTGRES_PASSWORD: gcloud-rails-test-production
   POSTGRES_DATABASE: gcloud-rails-test-production
   POSTGRES_SOCKET_PATH: /cloudsql/gcloud-rails-test:southamerica-east1:gcloud-rails-test-production
-# [END gae_flex_postgres_env]
 
-# [START gae_flex_postgres_settings]
 beta_settings:
   cloud_sql_instances: gcloud-rails-test:southamerica-east1:gcloud-rails-test-production
 # [END gae_flex_postgres_settings]
